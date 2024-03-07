@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self made</title>
+    <link rel="stylesheet" href="Self_made.css">
+   
+    <style>  
+        /* section:nth-child(1){
+            background-color: rgb(145, 155, 156);
+        } */
+        section:nth-child(3) span{
+            display: flex;
+            text-align: center;
+            font-weight:bolder;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 200px;
+        }
+        iframe{
+            border: 5px solid black ;
+        }
+        #iframe{
+            padding: 10px;
+            background-color: rgb(230, 168, 145);
+            margin: left 10px;;
+        }
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 100px;
+            margin-right: 100px;
+            border-radius: 10px ;
+            border-color: darkslategray;
+            border-style: solid;
+            text-align: center;
+            font-size: 50px;
+            color: black;
+            background-color: rgb(177, 107, 77);
+        }
+        h3{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 100%;
+            font-style: bold;
+        }
+        h4{
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+            padding: 25px;
+            line-height: 25px;
+            font-style: oblique;
+            font-size: larger;
+            text-align: left;
+            word-spacing: 3.5px;
+            border-style: solid;
+            border-radius: 20px;
+            text-decoration: double;
+        }
+        img{
+            
+
+
+        }
+        .sk{
+            height: 1px;
+        }
+        .dev{
+            background-color: rgb(216, 194, 194);
+        }
+        .web{
+            background-color: rgb(156, 87, 221);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="sentence"></h1>
+    </header>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    function displaySentenceWithInterval(sentence, interval) {
+        let index = 0;
+        const sentenceElement = document.getElementById("sentence");
+        const intervalId = setInterval(function() {
+            if (index < sentence.length) {
+                sentenceElement.textContent += sentence[index];
+                index++;
+            } else {
+                clearInterval(intervalId);
+            }
+        }, interval);
+    }
+
+    // Example usage:
+    const sentence = "Welcome to My Portfolio Website...";
+    const interval = 50; // Interval in milliseconds (here, 1000 milliseconds = 1 second)
+    displaySentenceWithInterval(sentence, interval);
+});
+    </script>
+    
+<nav>
+    <a href="#">Mr. Developer</a>
+    <a href="#" >About</a>
+    <a href="#" >Hobbies</a>
+    <a href="#" >Achievments</a>
+    <a href="#" >Memories</a>
+    <a href="#" >Own Projects</a>
+    <a href="#" >Media Handles</a>
+    
+</nav>
+<main>
+    <section class="dev">
+        <h2>Mr. Developer</h2>
+        <div class="container">
+            <img class="image" src="memories/27.jpg" alt="Your Image Description" width="200" >
+            <div class="content">
+                <p>Name: Sahil Yuvraj kamble
+                    <br>
+                    Proffesion: Student
+                    <br>
+                    Education: Btech-chemical engineering
+                    <br>
+                    Institute: IIT Roorkee , Uttarakhand
+                    <br>
+                    Age: 19
+                    <br>
+                    Home Town: Kolhapur
+                    <br>
+                    State: Maharashtra</p>
+            </div>
+        </div>
+    </section>
+<section class="abt">
+    <h2>About</h2>
+    <h4 class="h4">
+        
+            Hello dear !!!
+            <br>
+            I'm very greatful and thankful to you for visiting my website....My name is Sahil Kamble. i'm currently persuing my B.Tech degree in renowed institute of india that is IIT Roorkee. i have done my schooling in JNV SANGLI (Maharashtra) till 10th std. and successfully completed my jee preparation with PW(online)...i love to code, love to travel love listen to music etc. i'm learning new skills in tech zone with full enthusiasm, such as programming and web development and very curious to learn much more such skills... i believe that hardwork beats talent if you are not much smarter ,but you should be dedicated and hardworker... the purpose of my life is to gain more experiences every day and to enjoy the process of every part of my life...wish you a good journey ahead!!! 
+    </h4>
+
+    <hr width="80%" color="black">
+
+        <h2>Hobbies</h2>
+        <ul>
+            <li><h4>Learn new skills with coding</h4></li>
+            <li><h4>Listen to music</h4></li>
+            <li><h4>To do exercises daily</h4></li>
+            <li><h4>Gather infomation from social media</h4></li>
+            <li><h4>Writing self thoughts</h4></li>
+            <li><h4>To do meditation dialy</h4></li>
+        </ul>
+    </section>
+    <section >
+        <h2>Achievments</h2>
+        <span style="font-size: 300%;"  id="sentence2"></span> 
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    function displaySentenceWithInterval(sentence, interval) {
+        let index = 0;
+        const sentenceElement = document.getElementById("sentence2");
+        const intervalId = setInterval(function() {
+            if (index < sentence.length) {
+                sentenceElement.textContent += sentence[index];
+                index++;
+            } else {
+                clearInterval(intervalId);
+            }
+        }, interval);
+    }
+
+    // Example usage:
+    const sentence = "Coming soon...";
+    const interval = 50; // Interval in milliseconds (here, 1000 milliseconds = 1 second)
+    displaySentenceWithInterval(sentence, interval);
+});
+    </script>
+<section class="memories">
+    <h2>Memories</h2>
+    <img src="memories/5.jpg" alt=""  width = "25%" height="25%">
+    <img src="memories/4.jpg" alt="" width = "25%"height="25%">
+    <img src="memories/1.jpg" alt="" width = "25%"height="25%">
+    <img src="memories/2.jpg" alt="" width = "25%"height="25%">
+    <img src="memories/3.jpg" alt="" width = "25%"height="25%">
+    <img src="memories/7.jpg" alt="" width = "25%"height="25%">
+    <!-- <img src="memories/13.jpg" alt="" width = "25%"height="25%"> -->
+    <!-- <img src="memories/14.jpg" alt="" width = "25%"height="25%"> -->
+    <img src="memories/16.jpg" alt="" width = "25%"height="25%">
+    <img src="memories/23.jpg" alt="" width = "25%"height="25%">
+    <!-- <img src="memories/24.jpg" alt="" width = "25%"height="25%"> -->
+    <img src="memories/26.jpg" alt="" width = "25%"height="25%">
+    <!-- <img src="memories/17.jpg" alt="" width = "25%"height="25%"> -->
+    <img src="memories/28.jpg" alt="" width = "25%"height="25%">
+    <img src="memories/11.jpg" alt="" width = "25%"height="25%">
+    <img src="memories/22.jpg" alt="" width = "25%"height="25%">
+    <img src="memories/9.jpg" alt="" width = "25%"height="25%">
+    <img src="memories/10.jpg" alt="" width = "25%"height="25%">
+    <!-- <img src="memories/12.jpg" alt="" width = "25%"height="25%"> -->
+    <!-- <img src="memories/18.jpg" alt="" width = "25%"height="25%"> -->
+    <img src="memories/19.jpg" alt="" width = "25%"height="25%">
+    <img src="memories/6.jpg" alt="" width = "25%"height="25%">
+    <!-- <img src="memories/20.jpg" alt="" width = "25%"height="25%"> -->
+    <!-- <img src="memories/21.jpg" alt="" width = "25%"height="25%"> -->
+    <img src="memories/25.jpg" alt="" width = "25%"height="25%">
+    <!-- <img src="memories/27.jpg" alt="" width = "25%"height="25%"> -->
+</section>
+<section>
+<div class="vd">
+    <h2>video</h2>
+    <video  class="video" src="memories/video.mp4" width="30%" height="30%"  controls>video</video>
+</div>
+<section  id="iframe">
+    <div>
+        <h2 >Projects</h2>
+        <iframe src="payment_form.html" width="25%" frameborder="0" class="web"  >Payment</iframe>
+        <iframe src="animation-1.html" width="10%%" class="web">Animation</iframe>
+        <iframe src="animation.html" frameborder="0" width="20%" class="web"></iframe>
+        <iframe src="grid.html" frameborder="0" width="25%" class="web"></iframe>
+    </div>
+</section>
+<!-- <section >
+</section> -->
+
+<footer>
+    <div class="media">
+    <h2>Media Handles</h2>
+    <a href="https://www.linkedin.com/in/sahil-kamble-43b3ba279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" title="Go to my Linkedin" target="_blank"> <img src="Notes/img/linkedin.png"  alt="Linkedin" ></a>&nbsp;
+    <a href="https://www.instagram.com/sk_2448_iitr?igsh=ZGNjOWZkYTE3MQ==" title="Go to my instagram" target="_blank"><img src="Notes/img/insta.jpg" alt="instagram"></a>&nbsp;
+    <a href="mailto:syk2448@gmail.com" title="Go to my Gmail" target="_blank"><img src="Notes/img/gmail.png" alt="Gmail"></a>&nbsp;
+    <h5>(Click on the above icons to connect)</h5>
+    <hr width="25%" color="white">
+    <!-- <img src="Notes/img/icegif-169.gif" alt="thankyou" width="10px" > -->
+    <p>Thank you For Visiting !!!</p>
+    
+    </div>
+</footer>
+
+</main>
+</body>
+</html>
+
